@@ -1,0 +1,19 @@
+openapi: 3.0.0
+info:
+title: HomeFoodApp API
+version: 1.0.0
+description: API documentation for HomeFoodApp application
+paths: 
+ /api/v1/Chef_Name/{Chef_Id}:
+    get: 
+    summary: Get all the Chef Name with that chef_id
+    parameters:
+      - in: path
+        name: Chef_Id
+        required: true
+        schema:
+        type: string
+        description: Id of the Chef
+    responses:
+    '200':
+        description: Successful response
